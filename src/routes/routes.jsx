@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import NotFound from '../components/screens/not-found/not-found'
 import { useAuth } from '../hooks/useAuth'
+
+import NotFound from '../components/screens/not-found/not-found'
+
 import { routes } from './routes.data'
 
 const Router = () => {
@@ -14,6 +16,7 @@ const Router = () => {
 					if (route.isAuth && !isAuth) {
 						return false
 					}
+
 					return (
 						<Route
 							key={route.path}

@@ -1,4 +1,4 @@
-import Auth from '../components/screens/auth/auth'
+import Auth from '../components/screens/auth/Auth'
 import Home from '../components/screens/home/home'
 import NewWorkout from '../components/screens/new-workout/new-workout'
 import Profile from '../components/screens/profile/profile'
@@ -35,7 +35,7 @@ export const routes = [
 		path: '/workout/:id',
 
 		component: SingleWorkout,
-		isAuth: true,
+		auth: true,
 	},
 	{
 		path: '/workouts',
